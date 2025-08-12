@@ -1,0 +1,20 @@
+/* Mobile styles (<=600px) */
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero img {
+    max-width: 90%;
+  }
+  .hero-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet styles (<=1024px) */
+@media (max-width: 1024px) {
+  .hero-text {
+    font-size: 1.5rem;
+  }
+}
