@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theakifmethod - Elevate Your Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">theakifmethod</div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#programs">Program</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="#" class="btn btn-secondary">Login</a>
+                    <a href="#" class="btn btn-primary">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Calorie Calculator -->
+                <div class="calculator-section">
+                    <div class="calculator-box">
+                        <h2>Calorie Calculator</h2>
+                        <form id="calorieForm">
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="weight">Weight (kg)</label>
+                                <input type="number" id="weight" name="weight" placeholder="Enter weight in kg" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="height">Height (cm)</label>
+                                <input type="number" id="height" name="height" placeholder="Enter height in cm" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="activity">Activity Level</label>
+                                <select id="activity" name="activity" required>
+                                    <option value="">Select activity level</option>
+                                    <option value="1.2">Sedentary (little or no exercise)</option>
+                                    <option value="1.375">Lightly active (light exercise 1-3 days/week)</option>
+                                    <option value="1.55">Moderately active (moderate exercise 3-5 days/week)</option>
+                                    <option value="1.725">Very active (hard exercise 6-7 days/week)</option>
+                                    <option value="1.9">Super active (very hard exercise, physical job)</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="calculate-btn">Calculate Calories</button>
+                        </form>
+                        <div id="result" class="result-box"></div>
+                    </div>
+                </div>
+
+                <!-- Hero Images Grid -->
+                <div class="hero-images-grid">
+                    <div class="hero-text">
+                        <h3 class="hero-subtitle">ACHIEVE YOUR FITNESS GOALS</h3>
+                        <h2 class="hero-title">FIND YOUR STRENGTH</h2>
+                    </div>
+                    <div class="bento-grid">
+                        <div class="bento-item large">
+                            <img src="images/CALISTHENICS.jpg" alt="Calisthenics Training">
+                        </div>
+                        <div class="bento-item">
+                            <img src="images/FUNCTIONAL TRIANING.jpg" alt="Functional Training">
+                        </div>
+                        <div class="bento-item">
+                            <img src="images/craig-lovelidge-yDGsn39fbD4-unsplash.jpg" alt="Cardio Workout">
+                        </div>
+                        <div class="bento-item">
+                            <img src="./images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg" alt="Strength Training">
+                        </div>
+                        <div class="bento-item">
+                            <img src="./images/women 2.jpg" alt="Advanced Training">
+                        </div>
+                        <div class="bento-item">
+                            <img src="./images/gym.jpg" alt="Group Training">
+                        </div>
+                        <div class="bento-item">
+                            <img src="./images/RESISTANCE TRAINING.jpg" alt="HIIT Training">
+                        </div>
+                        <div class="bento-item">
+                            <img src="./images/women 1.jpg" alt="Power Training">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <h2>Explore Our Programs</h2>
+            <div class="program-tabs">
+                <button class="tab-btn active" data-tab="cardio">Cardio Strength</button>
+                <button class="tab-btn" data-tab="fatloss">Fat Loss</button>
+                <button class="tab-btn" data-tab="muscle">Muscle Gain</button>
+                <button class="tab-btn" data-tab="nutrition">Nutrition</button>
+            </div>
+            
+            <div class="tab-content active" id="cardio">
+                <div class="program-card">
+                    <img src="images/craig-lovelidge-yDGsn39fbD4-unsplash.jpg" alt="Cardio Strength">
+                    <div class="program-info">
+                        <h3>Cardio Strength</h3>
+                        <p>Boost your endurance and heart health with our high-intensity cardio strength routines designed to maximize your cardiovascular fitness.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="fatloss">
+                <div class="program-card">
+                    <img src="images/CALISTHENICS.jpg" alt="Fat Loss">
+                    <div class="program-info">
+                        <h3>Fat Loss</h3>
+                        <p>Burn fat efficiently with science-backed workouts and nutrition guidance tailored to help you achieve your weight loss goals.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="muscle">
+                <div class="program-card">
+                    <img src="images/FUNCTIONAL TRIANING.jpg" alt="Muscle Gain">
+                    <div class="program-info">
+                        <h3>Muscle Gain</h3>
+                        <p>Build lean muscle mass and strength with progressive overload training programs designed for maximum muscle growth.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="nutrition">
+                <div class="program-card">
+                    <img src="images/weights.png" alt="Nutrition">
+                    <div class="program-info">
+                        <h3>Nutrition</h3>
+                        <p>Personalized nutrition plans to fuel your fitness journey and optimize your recovery for better performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Advanced Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="images/features.jpg" alt="400+ Features">
+                    <div class="feature-content">
+                        <h3>400+ Features</h3>
+                        <p>Access advanced features typically found in high-end gyms, maximizing your investment and workout potential.</p>
+                        <a href="#" class="read-more">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <img src="images/metrics.jpg" alt="Smart Metrics">
+                    <div class="feature-content">
+                        <h3>Smart Workout & Health Metrics</h3>
+                        <p>Track your progress with real-time feedback and optimize your workouts for the best possible results.</p>
+                        <a href="#" class="read-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section class="trainers">
+        <div class="container">
+            <h2>Meet Our Expert Trainers</h2>
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <img src="images/trainer1.jpg" alt="Esther Howard">
+                    <h3>Esther Howard</h3>
+                    <p>Certified Personal Trainer</p>
+                </div>
+                
+                <div class="trainer-card">
+                    <img src="images/trainer2.jpg" alt="Leslie Alexander">
+                    <h3>Leslie Alexander</h3>
+                    <p>Strength & Conditioning Specialist</p>
+                </div>
+                
+                <div class="trainer-card">
+                    <img src="images/trainer3.jpg" alt="Jacob Jones">
+                    <h3>Jacob Jones</h3>
+                    <p>Nutrition & Wellness Coach</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Choose Your Plan</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Standard Plan</h3>
+                    <div class="price">$80<span>/month</span></div>
+                    <ul>
+                        <li>Unlimited Gym Access</li>
+                        <li>3 Free Fitness Classes</li>
+                        <li>Free Fitness Consultation</li>
+                        <li>1 Day Free Trial</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Join Now</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3>Premium Plan</h3>
+                    <div class="price">$120<span>/month</span></div>
+                    <ul>
+                        <li>Unlimited Gym Access</li>
+                        <li>5 Free Fitness Classes</li>
+                        <li>Personal Trainer</li>
+                        <li>3 Days Free Trial</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Join Now</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Advanced Plan</h3>
+                    <div class="price">$160<span>/month</span></div>
+                    <ul>
+                        <li>Unlimited Gym Access</li>
+                        <li>All Fitness Classes</li>
+                        <li>Personal Trainer</li>
+                        <li>7 Days Free Trial</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App CTA Section -->
+    <section class="app-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Download Our Workout Split</h2>
+                    <p>Get your personalized workout split plan designed by our expert trainers. Track your progress, access exclusive content, and stay motivated on your fitness journey.</p>
+                    <a href="pdf/workout-split.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download Workout Split PDF
+                    </a>
+                </div>
+                <div class="cta-image">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./images/women 1.jpg" alt="Workout Split">
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Personalized Training</h3>
+                                <p>Expert-designed workout splits tailored to your fitness goals and experience level.</p>
+                                <ul>
+                                    <li>Push/Pull/Legs Split</li>
+                                    <li>Upper/Lower Split</li>
+                                    <li>Full Body Split</li>
+                                    <li>Progressive Overload</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">theakifmethod</div>
+                    <p>Join the fitness journey with our expert trainers and advanced features. Achieve your goals with theakifmethod.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/theakifmethod?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Our Trainers</a></li>
+                            <li><a href="#">Why Choose Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Personal Training</a></li>
+                            <li><a href="#">Group Classes</a></li>
+                            <li><a href="#">Nutrition Plans</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>@2024 theakifmethod. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
